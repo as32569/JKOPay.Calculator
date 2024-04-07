@@ -1,6 +1,6 @@
 namespace JKOPay.Calculator.WebAPI
 {
-    public class WeatherForecast
+    public class DiscounController
     {
         public DateTime Date { get; set; }
 
