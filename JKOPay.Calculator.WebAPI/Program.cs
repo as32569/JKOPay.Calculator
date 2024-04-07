@@ -1,5 +1,8 @@
+using JKOPay.Calculator.Application.Constracts.Infrastructure.Message;
 using JKOPay.Calculator.Application.Constracts.Infrastructure.Weather;
 using JKOPay.Calculator.Application.Features.CalculateWeatherCoins;
+using JKOPay.Calculator.Domain;
+using JKOPay.Calculator.Infrastructure.Alert;
 using JKOPay.Calculator.Infrastructure.Weather;
 using System.Reflection;
 
@@ -14,6 +17,8 @@ builder.Services.AddSwaggerGen();
 
 
 builder.Services.AddScoped<IWeatherService, CWAWeatherService>();
+builder.Services.AddScoped<IAllertService, DummyAlertService>();
+builder.Services.AddScoped<IDiscounService, DiscounService>();
 
 builder.Services.AddMediatR(config =>
 {

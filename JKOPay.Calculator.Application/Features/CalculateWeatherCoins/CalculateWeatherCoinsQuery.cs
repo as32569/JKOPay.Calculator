@@ -1,4 +1,5 @@
-﻿using JKOPay.Calculator.Application.Constracts.Infrastructure.Weather;
+﻿using JKOPay.Calculator.Application.Constracts.Infrastructure.Message;
+using JKOPay.Calculator.Application.Constracts.Infrastructure.Weather;
 using JKOPay.Calculator.Application.Responses;
 using JKOPay.Calculator.Domain;
 using MediatR;
@@ -25,12 +26,14 @@ public class CalculateWeatherCoinsQueryDTO
 public class CalculateWeatherCoinsQueryHandler : IRequestHandler<CalculateWeatherCoinsQuery, BaseResponse<CalculateWeatherCoinsQueryDTO>>
 {
     private readonly IWeatherService _weatherService;
-    private readonly DiscounService _discounService;
+    private readonly IAllertService _allertService;
+    private readonly IDiscounService _discounService;
 
-    public CalculateWeatherCoinsQueryHandler(IWeatherService weatherService)
+    public CalculateWeatherCoinsQueryHandler(IWeatherService weatherService, IDiscounService discounService, IAllertService allertService)
     {
         _weatherService=weatherService;
-        _discounService = new DiscounService();
+        _allertService=allertService;
+        _discounService = discounService;
     }
     public async Task<BaseResponse<CalculateWeatherCoinsQueryDTO>> Handle(CalculateWeatherCoinsQuery request, CancellationToken cancellationToken)
     {
@@ -45,6 +48,11 @@ public class CalculateWeatherCoinsQueryHandler : IRequestHandler<CalculateWeathe
 
         //由輸入的街口幣 算出天氣幣金額
         var 獲取天氣幣金額 = _discounService.GetWeatherDiscoun(request.JKOSRedeemAmount, rainPercent);
+
+        if (獲取天氣幣金額>5000)
+        {
+            await _allertService.SendAlertToQueue("有大額天氣幣產生!請注意");
+        }
 
         //組裝回傳DTO
         var returnDto = new CalculateWeatherCoinsQueryDTO

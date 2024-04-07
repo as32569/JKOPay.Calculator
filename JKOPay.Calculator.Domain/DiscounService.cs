@@ -1,6 +1,6 @@
 ﻿namespace JKOPay.Calculator.Domain;
 
-public class DiscounService
+public class DiscounService : IDiscounService
 {
     public decimal GetWeatherDiscoun(decimal jkosRedeemAmount, decimal rainPercentage)
     {
