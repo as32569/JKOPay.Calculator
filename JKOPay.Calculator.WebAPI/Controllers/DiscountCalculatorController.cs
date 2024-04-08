@@ -7,13 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 namespace JKOPay.Calculator.WebAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    [Route("api/[controller]")]
+    public class DiscountCalculatorController : ControllerBase
     {
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogger<DiscountCalculatorController> _logger;
         private readonly IMediator _mediator;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IMediator mediator)
+        public DiscountCalculatorController(ILogger<DiscountCalculatorController> logger, IMediator mediator)
         {
             _logger = logger;
             _mediator=mediator;

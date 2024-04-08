@@ -23,9 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JKOPay.Calculator.Infrastru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JKOPay.Calculator.WebAPI", "JKOPay.Calculator.WebAPI\JKOPay.Calculator.WebAPI.csproj", "{2B6BBD16-95C9-4587-9173-F6548FB2977B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JKOPay.Calculator.Domain.Tests", "JKOPay.Calculator.Domain.Tests\JKOPay.Calculator.Domain.Tests.csproj", "{8BE2EDE4-5B16-40CD-8124-95DB182D34FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JKOPay.Calculator.Domain.Tests", "JKOPay.Calculator.Domain.Tests\JKOPay.Calculator.Domain.Tests.csproj", "{8BE2EDE4-5B16-40CD-8124-95DB182D34FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JKOPay.Calculator.Application.Tests", "JKOPay.Calculator.Application.Tests\JKOPay.Calculator.Application.Tests.csproj", "{6737D033-D979-4F0B-A5E3-9842BD7026E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JKOPay.Calculator.Application.Tests", "JKOPay.Calculator.Application.Tests\JKOPay.Calculator.Application.Tests.csproj", "{6737D033-D979-4F0B-A5E3-9842BD7026E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JKOPay.Calculator.WebAPI.IntegrationTests", "JKOPay.Calculator.WebAPI.IntegrationTests\JKOPay.Calculator.WebAPI.IntegrationTests.csproj", "{C3CF7C76-1C1D-4487-8018-E9337CA683FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{6737D033-D979-4F0B-A5E3-9842BD7026E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6737D033-D979-4F0B-A5E3-9842BD7026E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6737D033-D979-4F0B-A5E3-9842BD7026E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3CF7C76-1C1D-4487-8018-E9337CA683FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3CF7C76-1C1D-4487-8018-E9337CA683FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3CF7C76-1C1D-4487-8018-E9337CA683FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3CF7C76-1C1D-4487-8018-E9337CA683FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +82,7 @@ Global
 		{2B6BBD16-95C9-4587-9173-F6548FB2977B} = {3A1C1AD7-6042-4BEF-9A9A-921119D495F4}
 		{8BE2EDE4-5B16-40CD-8124-95DB182D34FF} = {6D573B3F-D8DB-434E-BE5B-48B6631CA8DA}
 		{6737D033-D979-4F0B-A5E3-9842BD7026E9} = {6D573B3F-D8DB-434E-BE5B-48B6631CA8DA}
+		{C3CF7C76-1C1D-4487-8018-E9337CA683FE} = {6D573B3F-D8DB-434E-BE5B-48B6631CA8DA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {76F441B2-1631-4FD2-B9B0-29BF7A6E42FD}
