@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JKOPay.Calculator.Domain.Te
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JKOPay.Calculator.Application.Tests", "JKOPay.Calculator.Application.Tests\JKOPay.Calculator.Application.Tests.csproj", "{6737D033-D979-4F0B-A5E3-9842BD7026E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JKOPay.Calculator.WebAPI.IntegrationTests", "JKOPay.Calculator.WebAPI.IntegrationTests\JKOPay.Calculator.WebAPI.IntegrationTests.csproj", "{C3CF7C76-1C1D-4487-8018-E9337CA683FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JKOPay.Calculator.WebAPI.IntegrationTests", "JKOPay.Calculator.WebAPI.IntegrationTests\JKOPay.Calculator.WebAPI.IntegrationTests.csproj", "{C3CF7C76-1C1D-4487-8018-E9337CA683FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JKOPay.Calculator.Domain.Specs", "JKOPay.Calculator.Domain.Specs\JKOPay.Calculator.Domain.Specs.csproj", "{BDC13C37-A4B7-46D1-93C8-C5139C60357A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +69,10 @@ Global
 		{C3CF7C76-1C1D-4487-8018-E9337CA683FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3CF7C76-1C1D-4487-8018-E9337CA683FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3CF7C76-1C1D-4487-8018-E9337CA683FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDC13C37-A4B7-46D1-93C8-C5139C60357A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDC13C37-A4B7-46D1-93C8-C5139C60357A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDC13C37-A4B7-46D1-93C8-C5139C60357A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDC13C37-A4B7-46D1-93C8-C5139C60357A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +89,7 @@ Global
 		{8BE2EDE4-5B16-40CD-8124-95DB182D34FF} = {6D573B3F-D8DB-434E-BE5B-48B6631CA8DA}
 		{6737D033-D979-4F0B-A5E3-9842BD7026E9} = {6D573B3F-D8DB-434E-BE5B-48B6631CA8DA}
 		{C3CF7C76-1C1D-4487-8018-E9337CA683FE} = {6D573B3F-D8DB-434E-BE5B-48B6631CA8DA}
+		{BDC13C37-A4B7-46D1-93C8-C5139C60357A} = {6D573B3F-D8DB-434E-BE5B-48B6631CA8DA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {76F441B2-1631-4FD2-B9B0-29BF7A6E42FD}
